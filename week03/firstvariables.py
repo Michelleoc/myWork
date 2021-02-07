@@ -1,5 +1,5 @@
 # messing aroung with variable types
-# Authoer: Michelle O'Connor
+# Author: Michelle O'Connor
 
 ageOfPatient = {}
 age = 3
