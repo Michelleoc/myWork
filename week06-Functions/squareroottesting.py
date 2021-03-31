@@ -1,6 +1,4 @@
-print ("Please enter a positive number:")
-
-print ("The square root of is approx")
+n = int(input("Please enter a positive number: "))
 
 def squareRoot(n, l) : 
   
@@ -25,3 +23,4 @@ def squareRoot(n, l) :
   
     return root  
     print(squareRoot(n, l))  
+
