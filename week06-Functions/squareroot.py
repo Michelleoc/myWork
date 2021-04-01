@@ -2,6 +2,9 @@
 # Take a positive floating point number as the input and output an approximation of its square root
 # Author : Michelle O'Connor
 
+# https://www.youtube.com/watch?v=-5e2cULI3H8
+# https://surajregmi.medium.com/how-to-calculate-the-square-root-of-a-number-newton-raphson-method-f8007714f64
+
 # Newton formula r = x + (n / x) / 2
 # or r = x + (n / x) * 0.5
 
@@ -30,14 +33,16 @@ def squareRoot(n, l) :
 	# To count the number of iterations
 	count = 0
 
+# Since we don't know the number of iterations it will take us, we need to use a while loop
 	while (1) :
 		count += 1
 
 		# Newton method square root formula calculation
 		root = 0.5 * (x + (n / x))
 
-		# Check for closeness to the tolerance level I set.  abs used to return absolute value. On the first iteration 7.75-14.5 is not less than 1. 
-        # Therfore the calculation continues
+		# Check for closeness to the tolerance level I set.  
+        # abs used to return absolute value. 
+        # On the first iteration 7.75-14.5 is not less than 1. 
 		if (abs(root - x) < l) :
 			break
 
@@ -50,5 +55,6 @@ def squareRoot(n, l) :
 print (squareRoot(n, l))
 
 # https://www.geeksforgeeks.org/find-root-of-a-number-using-newtons-method/
+# https://hackernoon.com/calculating-the-square-root-of-a-number-using-the-newton-raphson-method-a-how-to-guide-yr4e32zo
 
 
