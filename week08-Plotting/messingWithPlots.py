@@ -10,9 +10,9 @@ ypoints = xpoints * xpoints
 plt.plot (xpoints, ypoints, label = "xsquared")
 plt.plot (xpoints, xpoints, label = "straight", color = "red")
 plt.legend()
-# plt.show () to display
+plt.show () # to display
 
-plt.savefig("lecture2.png")
+# plt.savefig("lecture2.png")
 
 
 
